@@ -22,9 +22,26 @@
 				</article>
 			</main>
 		</div>
-	
 		<footer id="nav-footer" class ="page-footer">
 		</footer>
+		<script>
+			/*Reference https://www.geeksforgeeks.org/how-to-add-fade-in-effect-using-pure-javascript/*/
+			window.onload = fadeIn;
+
+			function fadeIn() {
+				var fade = document.getElementById("content");
+				var opacity = 0;
+				var intervalID = setInterval(function() {
+	  
+					if (opacity < 1) {
+						opacity = opacity + 0.01
+						fade.style.opacity = opacity;
+					} else {
+						clearInterval(intervalID);
+					}
+				}, 2);
+			}
+		</script>
 	</body>
 
 </html>
