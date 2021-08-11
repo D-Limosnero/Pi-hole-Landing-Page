@@ -8,9 +8,10 @@ body{
 	color: white; 
 	opacity: 0;
 	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 	height: 20em;
 	width: 48em;
-	border-radius: 25px;
+	border-radius: 15px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -32,7 +33,26 @@ body{
 
 .main-content .main-page-content .link{
 	font-size: 20px;
-	/*font-weight: bold;*/
 	text-align: center;
+	font-family: Arial;
+	
+}
+
+.main-content .main-page-content .link a{
+	background-color: red;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	text-decoration: none; /*Remove link underlining*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-content .main-page-content .link a:hover{
+	background-color: maroon;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 	
